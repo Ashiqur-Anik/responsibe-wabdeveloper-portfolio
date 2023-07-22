@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #fae6cf;
+}
+
+nav>h2 {
+    font-size: 40px;
+}
+
+h2 span {
+    color: orangered;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 150px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+.btn-orange {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+/* baner section  */
+.header{
+    background-image: url('images/header_bg.png'), url('images/developer.png');
+    background-repeat: no-repeat;
+    background-position: bottom right, top left;
+}
+.baner {
+    margin: 30px 0px 0px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content {
+    font-size: 20px;
+}
+
+h1,p,button {
+    padding: 7px 0;
+}
+
+.baner-img {
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+
+/* about releted style */
+
+main {
+    margin: 100px 250px 0px 250px;
+}
+
+main section {
+    margin-top: 120px;
+}
+
+.about {
+    background-color: #fae6cf;
+    text-align: justify;
+    padding: 80px;
+    margin-bottom: 80px;
+}
+
+.section-title {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.about-info-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 17px;
+    padding-top: 20px;
+}
+
+/* skills-container style */
+
+.what-i-do-description {
+    text-align: justify;
+    padding: 0px 90px 120px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+}
+
+.skill {
+    background-color: #e0effc;
+    ;
+    text-align: justify;
+    padding: 20px;
+    box-shadow: 1px 1px 4px black;
+}
+
+.skill img,
+h3 {
+    padding: 15px 0px;
+}
+
+/* resume section */
+
+.resume-container {
+    display: flex;
+    gap: 30px;
+}
+
+.resume-section>h3 {
+    padding: 0 0 80px 0;
+}
+
+.resume-item {
+    padding-top: 30px;
+}
+.button{
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* footer section style */
+footer{
+    background-color: #fae6cf;
+
+}
+.footer-container {
+    display: flex;
+    margin: 100px 200px 0px 250px;
+    padding: 90px 0;
+    gap: 50px;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 35px;
+}
+.footer-description{
+    font-size: 18px;
+    padding: 20px 0;
+}
+.footer-colume{
+    display: block;
+}
+.footer-input{
+    padding: 12px;
+    border: 0;
+    margin-bottom: 10px;
+    width: 300px;
+}
+.form{
+    display: block;
+}
+
+.btn{
+    display: block;
+}
+
+
+
+
+/* responsibe meadia quary  */
+
+@media screen and (max-width:576px) {
+    main {
+        margin: 0px;
+    }
+
+    nav {
+      flex-direction: column;
+    }
+    nav ul {
+       flex-direction: column;
+       padding: 0;
+    }
+    nav ul li {
+        padding: 6px;
+    }
+    .header{
+        background-image: none;
+    }
+    .baner {
+       flex-direction: column;
+       margin: 30px;
+    }
+    .btn-orange {
+        margin-top: 10px;
+    }
+    .baner-img{
+        width: 300px;
+        margin-left: 80px;  
+        padding-top: 50px;  
+    }
+
+
+
+
+    .about {
+        padding: 20px
+    }
+    .about-info-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .about-info{
+        padding: 10px 0;
+    }
+
+    .what-i-do-description {
+        padding: 20px;
+    }
+    .skills-container, .resume-container {
+        flex-direction: column;
+        margin: 20px;
+    }
+    .footer-container {
+        flex-direction: column;
+        margin: 10px;
+        text-align: center; 
+    }
+    .footer-input{
+        width: 250px;
+    }
+}
+
+
+@media screen and (min-width:576px) and (max-width:993px) {
+    main {
+        margin: 0px;
+    }
+    .about {
+        padding: 20px
+    }
+    
+    .about-info{
+        padding: 10px;
+    }
+    .what-i-do-description {
+        padding: 10px 150px;
+    }
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 20px;
+    }
+
+    .resume-container{
+        margin: 20px;
+    }
+   .footer-container {
+        flex-direction: column;
+        margin: 10px;
+        text-align: center;
+    }
+    .btn-orange{
+        margin-left: 230px
+    }
+}
